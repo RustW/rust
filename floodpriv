@@ -12,7 +12,7 @@ local GetService = setmetatable({}, {
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/RustW/rust/main/floodpriv2", true))()
 local NotifyLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))()
 local Notify = NotifyLibrary.Notify
-Library.theme.accentcolor = Color3.new(0, 0, 0.02)
+Library.theme.accentcolor = Color3.new(0, 1, 0)
 
 local RunService = GetService.RunService
 local Players = GetService.Players
@@ -2375,19 +2375,7 @@ spawn(function()
     end
 end)
 
-local __namecall -- cock ;)
-__namecall = hookmetamethod(game, "__namecall", function(self, ...)
-    local Args = {...}
-    local Method = getnamecallmethod()
 
-    if tostring(self.Name) == "MainEvent" and tostring(Method) == "FireServer" then
-        if Args[1] == "TeleportDetect" or Args[1] == "CHECKER_1" or Args[1] == "OneMoreTime" then
-            return
-        end
-    end
-
-    return __namecall(self, ...)
-end)
 
 local __index -- <3
 __index = hookmetamethod(game, "__index", function(self, key)

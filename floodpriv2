@@ -26,11 +26,11 @@ library.theme = {
     tilesize = 90,
     cursor = true,
     cursorimg = "https://t0.rbxcdn.com/42f66da98c40252ee151326a82aab51f",
-    backgroundcolor = Color3.fromRGB(255, 255, 255),
+    backgroundcolor = Color3.fromRGB(60, 60, 60),
     tabstextcolor = Color3.fromRGB(240, 240, 240),
-    bordercolor = Color3.fromRGB(255, 255, 255),
-    accentcolor = Color3.fromRGB(255, 255, 255),
-    accentcolor2 = Color3.fromRGB(255, 255, 255),
+    bordercolor = Color3.fromRGB(60, 60, 60),
+    accentcolor = Color3.fromRGB(60, 60, 60),
+    accentcolor2 = Color3.fromRGB(60, 60, 60),
     outlinecolor = Color3.fromRGB(60, 60, 60),
     outlinecolor2 = Color3.fromRGB(0, 0, 0),
     sectorcolor = Color3.fromRGB(30, 30, 30),
@@ -1049,7 +1049,7 @@ function library:CreateWindow(name, size, hidebutton)
                     dropdown.Nav.Rotation = 90
                     dropdown.Nav.ZIndex = 5
                     dropdown.Nav.Size = UDim2.fromOffset(8, 8)
-                    dropdown.Nav.Image = "rbxassetid://4918373417"
+                    dropdown.Nav.Image = ""
                     dropdown.Nav.ImageColor3 = Color3.fromRGB(210, 210, 210)
     
                     dropdown.BlackOutline2 = Instance.new("Frame", dropdown.Main)

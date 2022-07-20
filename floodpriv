@@ -12,7 +12,7 @@ local GetService = setmetatable({}, {
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/RustW/rust/main/floodpriv2", true))()
 local NotifyLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))()
 local Notify = NotifyLibrary.Notify
-Library.theme.accentcolor = Color3.new(0.603921, 0.011764, 1)
+Library.theme.accentcolor = Color3.new(0, 0, 0.02)
 
 local RunService = GetService.RunService
 local Players = GetService.Players
